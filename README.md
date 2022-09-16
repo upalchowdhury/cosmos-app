@@ -10,4 +10,10 @@ Testing cosmos blockchain by building an app specific blockchain
       7. Module manager is used for registering msg service and grpc services.
       8. SDK also has appCodec to handle data serde and convert to []bytes
       9. Starport CLI is used for installing dependencies, type and proto definition and compiling to tendermint binary. It can also be used for tesing simulation of the blockchain app.
-  
+#### Workflow
+A typical blockchain developer workflow looks something like this:
+
+- Start with proto files to define Cosmos SDK messages
+- Define and register queries
+- Define message handler logic
+- Finally, implement the logic of these queries and message handlers in keeper functions
